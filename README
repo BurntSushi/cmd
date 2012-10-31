@@ -1,0 +1,7 @@
+A convenience library for executing shell commands in Go. It also includes a 
+mechanism to run multiple commands in parallel using a pool.
+
+cmd is go gettable:
+
+  go get github.com/BurntSushi/cmd
+
