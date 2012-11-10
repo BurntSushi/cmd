@@ -54,8 +54,8 @@ func (cmds Commands) RunMany(workers int) []error {
 	wg := new(sync.WaitGroup)
 
 	for i := 0; i < workers; i++ {
+		wg.Add(1)
 		go func() {
-			wg.Add(1)
 			defer wg.Done()
 
 			for job := range jobs {
